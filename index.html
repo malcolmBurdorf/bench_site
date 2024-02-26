@@ -1,56 +1,111 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Computer Vision Research Benchmark</title>
-    <link rel="stylesheet" href="app.css">
+    <title>CV Benchmarks by TEMPLATED</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="description" content="A comprehensive resource for computer vision benchmarks, leaderboards, and datasets.">
+    <meta name="keywords" content="computer vision, benchmarks, datasets, leaderboard">
+    <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:700italic,400,300,700" rel="stylesheet" type="text/css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-panels.min.js"></script>
+    <script src="js/init.js"></script>
+    <noscript>
+        <link rel="stylesheet" href="css/skel-noscript.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-desktop.css">
+    </noscript>
 </head>
-<body>
+<body class="homepage">
 
-    <header>
+    <!-- Header -->
+    <div id="header">
         <div class="container">
-            <h1>CV Research Benchmark</h1>
-            <nav>
+            <!-- Logo -->
+            <div id="logo">
+                <h1><a href="#">CV Benchmarks</a></h1>
+            </div>
+            <!-- Nav -->
+            <nav id="nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="datasets.html">Datasets</a></li>
-                    <li><a href="leaderboard.html">Leaderboard</a></li>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="leaderboardtemp.html">Leaderboard</a></li>
+                    <li><a href="datasetstemp.html">Datasets</a></li>
+                    <li><a href="about.html">About</a></li>
                 </ul>
             </nav>
         </div>
-    </header>
+    </div>
+    <!-- Header -->
 
-    <main>
+    <!-- Banner -->
+    <div id="banner">
         <div class="container">
-            <section class="intro">
-                <h2>Welcome to the Computer Vision Research Benchmark</h2>
-                <p>This benchmark provides a comprehensive suite of datasets and a leaderboard for evaluating state-of-the-art computer vision algorithms. Explore our datasets and see how competing algorithms stack up on the leaderboard.</p>
-            </section>
-            <section class="features">
-                <article>
-                    <h3>Diverse Datasets</h3>
-                    <p>Access a wide range of datasets covering various computer vision tasks, including image classification, object detection, and more.</p>
-                </article>
-                <article>
-                    <h3>Leaderboard</h3>
-                    <p>View the latest rankings and performance metrics of algorithms on each dataset, fostering a competitive and collaborative environment.</p>
-                </article>
-                <article>
-                    <h3>Community Driven</h3>
-                    <p>Join the community, contribute datasets, and share your results to advance the field of computer vision together.</p>
-                </article>
-            </section>
+            <header>
+                <h2>Welcome to CV Benchmarks</h2>
+            </header>
+            <p>Your ultimate resource for exploring and comparing computer vision models, datasets, and research achievements.</p>
         </div>
-    </main>
+    </div>
+    <!-- /Banner -->
 
-    <footer>
-        <div class="container">
-            <p>© 2024 Computer Vision Research Benchmark. All rights reserved.</p>
+    <!-- Main -->
+    <div id="page">
+        <div id="main" class="container">
+            <div class="row">
+                <!-- Featured Datasets -->
+                <div class="6u">
+                    <section>
+                        <header>
+                            <h2>Featured Datasets</h2>
+                        </header>
+                        <p>Explore our curated collection of high-quality datasets for computer vision, ideal for training and testing your models.</p>
+                        <a href="datasetstemp.html" class="button">Browse Datasets</a>
+                    </section>
+                </div>
+                <!-- Leaderboard -->
+                <div class="6u">
+                    <section>
+                        <header>
+                            <h2>Leaderboard</h2>
+                        </header>
+                        <p>Compare the top-performing computer vision models across various benchmarks and challenges.</p>
+                        <a href="leaderboardtemp.html" class="button">View Leaderboard</a>
+                    </section>
+                </div>
+            </div>
         </div>
-    </footer>
+    </div>
+    <!-- /Main -->
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <section class="12u">
+                    <h2>Stay Updated</h2>
+                    <p>Sign up for our newsletter to receive the latest updates on new datasets, leaderboard changes, and more.</p>
+                    <form method="post" action="#">
+                        <div class="row half">
+                            <div class="6u">
+                                <input type="text" class="text" name="email" placeholder="Email Address" />
+                            </div>
+                            <div class="6u">
+                                <input type="submit" class="button" value="Subscribe" />
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- /Footer -->
+
+    <!-- Copyright -->
+    <div id="copyright">
+        Powered by: <a href="https://templated.co/">TEMPLATED</a>
+    </div>
 
 </body>
 </html>
-
 
