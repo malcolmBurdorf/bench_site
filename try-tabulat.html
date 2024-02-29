@@ -1,0 +1,128 @@
+<<!DOCTYPE HTML>
+<!--
+    Ex Machina by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+<head>
+    <title>Ex Machina by TEMPLATED</title>
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:700italic,400,300,700" rel="stylesheet" type="text/css">
+    <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-panels.min.js"></script>
+    <script src="js/init.js"></script>
+    <noscript>
+        <link rel="stylesheet" href="css/skel-noscript.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-desktop.css">
+    </noscript>
+    <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+    <link href="https://cdn.jsdelivr.net/npm/tabulator-tables/dist/css/tabulator.min.css" rel="stylesheet">
+<link href="/dist/css/tabulator_bulma.min.css" rel="stylesheet">
+</head>
+<body class="no-sidebar">
+
+    <!-- Header -->
+    <div id="header">
+        <div class="container">
+            <!-- Logo -->
+            <div id="logo">
+                <h1><a href="#">Ex Machina</a></h1>
+            </div>
+            <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="left-sidebar.html">Left Sidebar</a></li>
+                    <li><a href="right-sidebar.html">Right Sidebar</a></li>
+                    <li class="active"><a href="no-sidebar.html">No Sidebar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- Header -->
+    
+    <!-- Banner -->
+    <div id="banner">
+        <div class="container">
+        </div>
+    </div>
+    <!-- /Banner -->
+
+    <!-- Main -->
+    <div id="page">
+        <!-- Main -->
+        <div id="main" class="container">
+            <div class="row">
+                <!-- Add the Tabulator div here, where you want the table to be displayed -->
+                <div id="example-table"></div>
+                <div id="example-table2"></div>
+                <div class="12u">
+                    <!-- Your content here -->
+                </div>
+            </div>
+        </div>
+        <!-- Main -->
+    </div>
+    <!-- /Main -->
+
+    <!-- Featured -->
+    <div id="featured">
+        <!-- Your Featured content here -->
+    </div>
+    <!-- /Featured -->
+
+    <!-- Footer -->
+    <div id="footer">
+        <!-- Your Footer content here -->
+    </div>
+    <!-- /Footer -->
+
+    <!-- Copyright -->
+    <div id="copyright" class="container">
+        Powered by: <a href="https://templated.co/">TEMPLATED</a>
+    </div>
+
+    <!-- Include Tabulator js and initialize the table -->
+    <script src="https://cdn.jsdelivr.net/npm/tabulator-tables/dist/js/tabulator.min.js"></script>
+    <script>
+        // Sample table data
+        var tabledata = [
+                    {
+                        method: "UGainS",
+                        paper: "<a href='https://arxiv.org/pdf/2308.02046.pdf' target='_blank'><i class='fa fa-file-pdf' aria-hidden='true'></i></a>",
+                        code: "<a href='https://github.com/kumuji/ugains' target='_blank'><i class='fa fa-github' aria-hidden='true'></i></a>",
+                        ap: "",
+                        ap50: ""
+                    },
+                    // Add more data as needed
+                ];
+        // Initialize Tabulator on div with id example-table
+        var table = new Tabulator("#example-table", {
+            data:tabledata, //assign data to table
+            autoColumns:true, //create columns from data field names
+        });
+
+	var table2 = new Tabulator("#example-table2", {
+    height:"311px",
+    columns:[
+    {title:"Name", field:"name"},
+    {title:"Progress", field:"progress", sorter:"number"},
+    {title:"Gender", field:"gender"},
+    {title:"Rating", field:"rating"},
+    {title:"Favourite Color", field:"col"},
+    {title:"Date Of Birth", field:"dob", hozAlign:"center"},
+    ],
+});
+    </script>
+
+</body>
+</html>
+

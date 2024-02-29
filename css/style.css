@@ -11,7 +11,147 @@
 /*********************************************************************************/
 /* Basic                                                                         */
 /*********************************************************************************/
-		/* Table Basic Styling */
+
+#pricing {
+    padding: 30px 0
+}
+
+.pricing-table {
+    background: #353b48;
+    padding: 30px;
+    text-align: center
+}
+
+.pricing-table .table-header h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #fff
+}
+
+.pricing-table .plan .price {
+    font-size: 24px;
+    color: #fff
+}
+
+.pricing-table .plan-info {
+    margin-top: 30px
+}
+
+.pricing-table .plan-info p {
+    color: #fff
+}
+
+.pricing-table .button-area {
+    margin-top: 30px
+}
+
+.pricing-tables {
+    padding: 25px 0;
+    text-align: center
+}
+
+.pricing-tables .pricing-table-block {
+    background: #f6f6f6;
+    text-align: center;
+    position: relative;
+    background-color: #fff;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    border: 1px solid #f1f1f1
+}
+
+.pricing-tables .highlight-plan {
+    margin: -15px 0;
+    margin-right: -1px;
+    z-index: 1;
+    background: #f6f6f6
+}
+
+.pricing-tables .pricing-table-block .highlight-plan .plan-name {
+    padding: 25px 0
+}
+
+.pricing-tables .pricing-table-block .highlight-plan .plan-name h3 {
+    color: #fff
+}
+
+.pricing-tables .pricing-table-block .highlight-plan .plan-signup {
+    padding: 30px 0;
+    background: #EB586F
+}
+
+.pricing-tables .pricing-table-block .highlight-plan .plan-signup .btn-system.border-btn {
+    border-color: #fff;
+    color: #fff
+}
+
+.pricing-table-block {
+    background: #f6f6f6;
+    text-align: center;
+    position: relative;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear
+}
+
+.pricing-table-block .plan-name {
+    padding: 25px;
+    background: #EB586F;
+    margin-bottom: 20px
+}
+
+.pricing-table-block .plan-name h3 {
+    font-size: 22px;
+    line-height: 24px;
+    margin: 0;
+    color: #fff
+}
+
+.pricing-table-block .plan-price {
+    margin-bottom: 30px
+}
+
+.pricing-table-block .plan-price .price-value {
+    font-size: 50px;
+    line-height: 76px;
+    font-weight: 700;
+    color: #333333
+}
+
+.pricing-table-block .plan-price .price-value span {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 18px
+}
+
+.pricing-table-block .plan-price .interval {
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: 700
+}
+
+.pricing-table-block .plan-list li {
+    padding: 10px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #ddd
+}
+
+.pricing-table-block .plan-list li i {
+    margin-right: 10px
+}
+
+.pricing-table-block .plan-signup {
+    padding: 15px 0px 30px
+}
+
+.pricing-table-block .plan-signup a {
+    text-transform: uppercase
+}
+/* Table Basic Styling */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -63,7 +203,28 @@ tbody tr:hover {
 	height: auto;
 }
 
+.scrollable-table {
+    overflow-y: auto;
+    max-height: 400px; /* Adjust this value according to your needs */
+    width: 100%; /* Ensure the container fits the width of its parent */
+}
 
+.scrollable-table table caption {
+    position: sticky;
+    top: 0;
+    z-index: 2; /* Ensure it's above the table rows but below the sticky header */
+    background-color: #fff; /* Match your desired background color */
+    padding: 10px; /* Adjust based on your design */
+    font-size: 1.2em; /* Adjust based on your design */
+    font-weight: bold; /* Adjust based on your design */
+}
+
+.scrollable-table thead th {
+    position: sticky;
+    top: 40px; /* Height of the caption, adjust accordingly */
+    background-color: #e95d3c; /* Keep consistent with your table header background */
+    z-index: 3; /* Ensures header is above the caption */
+}
 table caption {
     caption-side: top; /* Default value, but ensures it's at the top */
     font-size: 1.2em;
@@ -833,7 +994,7 @@ table caption {
 	#logo
 	{
 		position: absolute;
-		left: 0em;
+		left: -10em;
 		top: 3em;
 	}
 	
@@ -845,8 +1006,9 @@ table caption {
 		{
 			display: block;
 			text-decoration: none;
-			font-size: 2.8em;
+			font-size: 2.0em;
 			font-weight: 600;
+			left:0em
 		}
 
 /*********************************************************************************/
@@ -927,7 +1089,7 @@ table caption {
 	
 	.sidebar header h2
 	{
-		font-size: 1.6em;
+		font-size: 1.5em;
 	}
 
 /*********************************************************************************/

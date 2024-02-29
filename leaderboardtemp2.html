@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Leaderboard - Ex Machina by TEMPLATED</title>
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:700italic,400,300,700" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tabulator-tables/dist/css/tabulator.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/tabulator-tables/dist/js/tabulator.min.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-panels.min.js"></script>
+    <script src="js/init.js"></script>
+    <noscript>
+        <link rel="stylesheet" href="css/skel-noscript.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-desktop.css">
+    </noscript>
+    <!-- Include Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- Optional: include a theme -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap-theme.min.css">
+
+<!-- Include jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Include Bootstrap JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body class="no-sidebar">
+
+    <!-- Header -->
+    <div id="header">
+        <div class="container">             
+            <!-- Logo -->
+            <div id="logo">
+                <h1><a href="#">Ex Machina</a></h1>
+            </div>
+            <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Homepage</a></li>
+                    <li class="active"><a href="leaderboardtemp.html">Leaderboard</a></li>
+                    <li><a href="datasetstemp.html">Datasets</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- Header -->
+    
+    <!-- Banner -->
+    <div id="banner">
+        <div class="container">
+        </div>
+    </div>
+    <!-- /Banner -->
+
+    <!-- Main -->
+    <div id="page">        
+	    <!-- Main -->
+        <div id="main" class="container">
+	    <header style="text-align: center;">
+                <h2>Leaderboard</h2>
+            </header>
+
+	    <div id="leaderboard-table"></div>
+            <table>
+		    <caption>Fishyscapes Lost & Found</caption>
+                <thead>
+                    <tr>
+                        <th>Method</th>
+			<th>OoD Data</th>
+
+                        <th>AP</th>
+                        <th>AP50</th>
+			
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">UGainS <a href="https://arxiv.org/pdf/2308.02046.pdf" target="_blank"><i class="fa fa-file-pdf" aria-hidden="true"></i></a></td>
+			<td>✓</td>
+                        <td>98.5%</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+			<td>X</td>
+                        <td>98.5%</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>U3HS <a href="https://arxiv.org/pdf/2209.05407.pdf" target="_blank"><i class="fa fa-file-pdf" aria-hidden="true"></i></a></td>
+                        <td>✓</td>
+                        <td>97.8%</td>
+                    </tr>
+                    <!-- Additional rows as needed -->
+                    <tr>
+                        <td>Mask2Anomaly <a href="https://arxiv.org/pdf/2309.04573.pdf" target="_blank"><i class="fa fa-file-pdf" aria-hidden="true"></i></a></td>
+                        <td>✓</td>
+                        <td>97.8%</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+            <table>
+		    <caption>Road Anomaly</caption>
+                <thead>
+                    <tr>
+                        <th>Method</th>
+			<th>OoD Data</th>
+
+                        <th>AP</th>
+                        <th>AP50</th>
+			
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>UGainS <a href="https://arxiv.org/pdf/2308.02046.pdf" target="_blank"><i class="fa fa-file-pdf" aria-hidden="true"></i></a></td>
+			<td>✓</td>
+                        <td>98.5%</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>U3HS <a href="https://arxiv.org/pdf/2209.05407.pdf" target="_blank"><i class="fa fa-file-pdf" aria-hidden="true"></i></a></td>
+                        <td>✓</td>
+                        <td>97.8%</td>
+                    </tr>
+                    <!-- Additional rows as needed -->
+                    <tr>
+                        <td>Mask2Anomaly <a href="https://arxiv.org/pdf/2309.04573.pdf" target="_blank"><i class="fa fa-file-pdf" aria-hidden="true"></i></a></td>
+                        <td>✓</td>
+                        <td>97.8%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+		    <caption>Road Obstacle</caption>
+                <thead>
+                    <tr>
+                        <th>Method</th>
+			<th>OoD Data</th>
+
+                        <th>AP</th>
+                        <th>AP50</th>
+			
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>UGainS <a href="https://arxiv.org/pdf/2308.02046.pdf" target="_blank"><i class="fa fa-file-pdf" aria-hidden="true"></i></a></td>
+			<td>✓</td>
+                        <td>98.5%</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>U3HS <a href="https://arxiv.org/pdf/2209.05407.pdf" target="_blank"><i class="fa fa-file-pdf" aria-hidden="true"></i></a></td>
+                        <td>✓</td>
+                        <td>97.8%</td>
+                    </tr>
+                    <!-- Additional rows as needed -->
+                    <tr>
+                        <td>Mask2Anomaly <a href="https://arxiv.org/pdf/2309.04573.pdf" target="_blank"><i class="fa fa-file-pdf" aria-hidden="true"></i></a></td>
+                        <td>✓</td>
+                        <td>97.8%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+	</div>
+        <!-- Main -->
+    </div>
+    <!-- /Main -->
+
+    <!-- Featured -->
+    <div id="featured">
+        <div class="container">
+            <div class="row">
+                <!-- Featured content if needed -->
+            </div>
+        </div>
+    </div>
+    <!-- /Featured -->
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="container">
+            <!-- Empty Footer -->
+        </div>
+    </div>
+    <!-- /Footer -->
+
+    <!-- Copyright -->
+    <div id="copyright">
+        Powered by: <a href="https://templated.co/">TEMPLATED</a>
+    </div>
+
+</body>
+</html>
+
